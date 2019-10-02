@@ -24,12 +24,11 @@ services:
       - ./app:/var/www/html
 
   db:
-    image: mysql:latest
+    image: mysql:8
     env_file: .env
     ports:
       - "3306:3306"
     volumes:
-      - ./mysql/config:/etc/mysql
+      - ./mysql/my.cnf:/etc/mysql/my.cnf
       - ./mysql/data:/var/lib/mysql
-      - ./mysql/initial.sql:/docker-entrypoint-initdb.d/initial.sql
 

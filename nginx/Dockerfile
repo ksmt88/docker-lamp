@@ -1,4 +1,4 @@
-FROM nginx:1.13.12-alpine
+FROM nginx:1.17-alpine
 
 # ツールをインストール
 RUN apk --update add openssl

@@ -1,6 +1,10 @@
-# LAMP - docker
+LAMP - docker
+====
 
-Build LAMP environment with docker.
+A LAMP environment built using docker-compose.
 
+## Dependencies
+- Docker
 
+## Usage
 
